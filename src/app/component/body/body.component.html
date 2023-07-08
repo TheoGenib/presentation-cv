@@ -1,0 +1,60 @@
+<!------------->
+<!--HOME BODY-->
+<!------------->
+<div *ngIf="router.url ===('/home' || '/')" class="home-body-wrapper">
+
+
+    <!--TEXT-->
+    <div class="home-text-wrapper">
+        <h1>Théo GUILLAUME</h1>
+        <h2>Développeur web Angular</h2>
+        
+        <div class="carousel-container">
+            <igx-carousel #carousel>
+                <igx-slide *ngFor="let slide of slides;">
+                    <div class="image-container">
+                        <img [src]="slide.src">
+                    </div>
+                </igx-slide>
+            </igx-carousel>
+        </div>
+
+        <div class="home-link-wrapper">
+            <div class="home-logo-wrapper">
+                <img class="home-logo" src="../../../assets/img/logo-github.png">
+                <a href="https://github.com/TheoGenib" target="_blank">GitHub Théo GUILLAUME </a>
+            </div>
+            <div class="home-logo-wrapper">
+                <img class="home-logo" src="../../../assets/img/logo-instagram.png">
+                <a href="https://github.com/TheoGenib" target="_blank">Instagram Théo GUILLAUME </a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--IMAGE-->
+    <div class="home-img-wrapper">
+        <img class="home-pic" src="../../../assets/img/home-pic.jpg">
+        <div class="home-round"></div>
+        <div class="home-round"></div>
+        <div class="home-round"></div>
+    </div>
+
+
+
+</div>
+
+<!----------->
+<!--CV BODY-->
+<!----------->
+<div *ngIf="router.url ===('/cv' )">
+
+</div>
+
+<!---------------->
+<!--CONTACT BODY-->
+<!---------------->
+<div *ngIf="router.url ===('/contact')">
+
+</div>

@@ -1,0 +1,23 @@
+.navbar {
+    height: 8vh;
+    background-color: #c5371a;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.navbar-button{
+    margin-right: 20px;
+    background-color: #c5371a !important;
+    color: white !important;
+}
+
+.mat-mdc-icon-button{
+    margin-left: 20px;
+    margin-right: 20px;
+    color: white;
+}
+
+.navbar-button.selected {
+    border: 2px solid white;
+  }

@@ -1,0 +1,7 @@
+app-nav {
+    z-index: 2;
+}
+
+app-body {
+    z-index: 1;
+}
